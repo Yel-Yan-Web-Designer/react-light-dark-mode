@@ -1,0 +1,62 @@
+/* ?------------------------------- */
+/* ? CUSTOM PROPERTIES */
+/* ?------------------------------- */
+:root{
+  /* !--COLORS--! */
+  --clr-primary : #61DAFB;
+  --clr-dark :  #21222A;
+  --clr-black : hsl(0, 0%, 0%);
+  --clr-white : hsl(100, 100%, 100%);
+
+
+  /* !---FONTS---! */
+  --fs-sm : 0.75rem;
+  --fs-normal : 1rem;
+  --fs-lg : 1.5rem;
+  --fs-xlg : 1.8rem;
+  --fs-2xlg : 2.2rem;
+
+  --fw-light : 250;
+  --fw-normal : 400;
+  --fw-bold : 600;
+}
+
+/* ?------------------------------- */
+/* ? RESET */
+/* ?------------------------------- */
+*,*::before,*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: var(--clr-white);
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-normal);
+  line-height: 1.45;
+  color: var(--clr-black);
+  overflow: hidden;
+}
+img{
+  display: block;
+  max-width: 100%;
+}
+
+h1,h2,h3,h4,h5,p{
+  margin: 0;   /* * explicit margin 0 */
+}
+
+h1{font-size: var(--fs-2xlg);}
+h3{font-size: var(--fs-lg);}
+h4{font-size: var(--fs-sm);}
+p{
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-normal);
+}
+
+.container{
+  margin: 0 auto;
+  width: 93%;
+  max-width: 93%;
+  /* border: 1px solid red; */
+}

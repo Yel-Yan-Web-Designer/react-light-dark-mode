@@ -1,0 +1,109 @@
+/* ?---NAV STYLE---? */
+nav{
+  background-color: var(--clr-white);
+  box-shadow: 0px 6px 10px -8px rgba(0,0,0,0.58);
+  -webkit-box-shadow: 0px 6px 10px -8px rgba(0,0,0,0.58);
+  -moz-box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.58);
+}
+nav.dark{
+  background-color: var(--clr-dark);
+}
+nav .container{
+  padding: 0.7rem 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-container{
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.logo{
+  width: 4rem;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+.logo-text{
+  color: var(--clr-primary);
+  font-weight: bolder;
+  cursor: pointer;
+}
+.toggler{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+nav.dark .toggler-slider{
+    border-color: var(--clr-white);
+    background-color: var(--clr-white);
+    justify-content: flex-end;
+    transition: all 0.3s ease;
+}
+.toggler-slider{
+  width: 2.2rem;
+  height: 1.2em;
+  border: 1px solid var(--clr-black);
+  border-radius: 10px;
+  cursor: pointer;
+  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+
+nav.dark .toggler-slider-circle{
+  margin-right: 2px;
+  transition: all 0.3s ease;
+}
+.toggler-slider-circle{
+  width: 15px;
+  height: 15px;
+  background-color: var(--clr-black);
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+  margin-left: 2px;
+}
+nav.dark .toggler-light{
+  color: var(--clr-white);
+  opacity: 0.6;
+}
+nav.dark .toggler-dark{
+  color: var(--clr-white);
+  opacity: 1;
+}
+.toggler-dark{
+  margin-top: 3px;
+  color: var(--clr-dark);
+  opacity: 0.6;
+}
+ul > li::marker{
+  font-size: 1.3rem;
+  color: var(--clr-primary);
+}
+ul li{
+  margin-left: 1.3rem;
+  font-size: var(--fs-normal);
+  color: var(--clr-dark);
+}
+/* ?---MAIN STYLE---? */
+.main{
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+main.dark {
+  background-color: #282D35;
+}
+main.dark h1{
+  color:  var(--clr-white);
+}
+main.dark li{
+  color: var(--clr-white);
+}
